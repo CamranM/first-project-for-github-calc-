@@ -1,0 +1,11 @@
+#Check if Palindrome - Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like “racecar”
+
+def palindrome():
+    while True:
+        word = input("Please enter a word:")
+        opp = word[::-1]
+        if opp == word:
+            print("The word is a palindrome")
+        else:
+            print("This word is not a palindrome")
+palindrome()
