@@ -1,0 +1,19 @@
+def calculator():
+    print("This is a calculator")
+    while True:
+        ques = (input("Would you like to Add, Mutliply, Subtract, or Divide?"))
+        num1 = int(input("What is your first number?"))
+        num2 = int(input("What is your second number?"))
+        if ques == "Add":
+            return num1 + num2  
+        elif ques == "Subtract":
+            return num1 - num2
+        elif ques == "Multiply":
+            return num1 * num2
+        elif ques == "Divide":
+            return num1 / num2
+        else:
+            print("Please try again")
+
+         
+calculator()
