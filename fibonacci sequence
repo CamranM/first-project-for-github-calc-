@@ -1,0 +1,11 @@
+def fibonacci():
+    limit = int(input("Provide a limit number for the fibonacci sequence:"))
+    seq = [0, 1]
+    while True:
+        newnum = seq[-1] + seq[-2]
+        if newnum <= limit:
+            seq.append(newnum)
+        else:
+            break
+    print("This is the sequence" , seq)      
+fibonacci()
