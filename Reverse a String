@@ -1,0 +1,5 @@
+def reverse():
+    word = input("Please enter a string:")
+    print(word[::-1])
+
+reverse()
