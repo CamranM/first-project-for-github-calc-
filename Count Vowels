@@ -1,0 +1,30 @@
+#Count Vowels - Enter a string and the program counts the number of vowels in the text. For added complexity have it report a sum of each vowel found.
+#Solution without using a dictionary 
+
+def countvowel():
+    vowels = "a", "e", "i", "o", "u"
+    word = input("Please type in a word:")
+    a = 0
+    e = 0
+    i = 0
+    o = 0
+    u = 0
+    
+    for char in word:
+        if char in vowels:
+            if char == "a":
+                a +=1
+            if char == "e":
+                e +=1
+            if char == "i":
+                i += 1
+            if char == "o":
+                o += 1
+            if char == "u":
+                u += 1
+    
+    sum = a + e + i + o + u
+    print(f"There are {sum} vowels")
+    print(f"There are {a} a's, {e} e's, {i} i's, {o} o's, and {u} u's")
+ 
+countvowel()
